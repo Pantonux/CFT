@@ -1,3 +1,135 @@
-// Place all the styles related to the simple_pages controller here.
+#navbar-example {
+  position: fixed;
+  background-color: #0066CC;
+  width: 100% !important;
+  left: 0;
+  z-index: 1000;
+}
+
+#navbar-example a {
+  padding: 1em;
+  background-color: #0066CC;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: color 600ms;
+}
+
+#navbar-example a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#Index h1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0066CC;
+  color: #FFF;
+  padding: 2em;
+  width: 100%;
+}
+
+#Index h2 {
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+ }
+
+#Index p {
+  text-align: center;
+  padding: 1.5em;
+  width: 100%;
+}
+
+#About h1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0066CC;
+  color: #FFF;
+  padding: 2em;
+  width: 100%;
+  }
+
+#About p {
+  text-align: center;
+  padding: 1.5em;
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+}
+
+#Contact h1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0066CC;
+  color: #FFF;
+  padding: 2em;
+  width: 100%;
+  }
+
+#Contact p {
+  text-align: center;
+  padding: 1.5em;
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+}
+
+
+
+#Index h1 {
+  font-family: Questrial, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+#Index p {
+  font-size: 1.2em;
+  font-weight: 50;
+}
+
+#Index h2 {
+  font-size: 2em;
+  font-weight: 50;
+}
+
+#About h1 {
+  font-family: Questrial, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+#About p {
+  font-size: 1.2em;
+  font-weight: 50;
+}
+
+#Contact h1 {
+  font-family: Questrial, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+#Contact p {
+  font-size: 1.2em;
+  font-weight: 50;
+}
+
+.img-responsive {
+  text-align: center;
+  width: 100%;
+ }
+
+#footer {
+  text-align: center;
+  width: 100% !important;
+}
+
+
+
+
+ // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
