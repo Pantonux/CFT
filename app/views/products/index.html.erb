@@ -1,31 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <% @products.each do |product| %>
+        <div class="col-sm-12 col-md-6 col-lg">
+          <div  class="productgallery-image"><%= image_tag(product.image_url, class: "img-fluid") %></div>
+          <div class="productgallery-info">
+            <a href="#"><p class="productgallery-name"><%= product.name %></p></a>
+            <p class="productgallery-decription"><%= product.description %></p>
+            <p class="productgallery-color">Color: <%= product.colour %></p>
+            <p class="productgallery-price"><%= product.price %>€</p>
+          </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+          <div class="productgallery-edit">
+           <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+           <p class="horizontal-line"><%= link_to 'Show', product %></p>
+           <p class="horizontal-line"><%= link_to 'Edit', edit_product_path(product) %></p>
+         </div>
+       </div><!-- /col -->
+     </div>
+</div>
 
 <%= link_to 'New Product', new_product_path %>
