@@ -1,6 +1,7 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .productgallery-name {
   vertical-align: top;
   width: 15%;
@@ -9,36 +10,45 @@
   font-weight: 400;
   text-transform: uppercase;
 }
- .productgallery-decription {
+
+.productgallery-description {
   vertical-align: top;
   width: 35%;
   font-size: 0.85em;
   font-size: 1em;
   font-weight: 300;
 }
- .productgallery-image {
+
+.productgallery-image {
   width: 35%;
   padding-bottom: 5%;
+}
+
 .productgallery-color {
   font-size: 1em;
   font-weight: 300;
 }
- .productgallery-edit {
+
+.productgallery-edit {
   vertical-align: top;
   width: 5%;
   text-align: center;
+}
+
 .productgallery-price {
   font-size: 1em;
   font-weight: bold;
 }
- .productgallery-edit p {
+
+.productgallery-edit p {
   float:right;
   padding-right: 2%;
   margin-top: 2%;
   margin-bottom: 8%;
   font-size: 0.9em;
 }
- p.horizontal-line::after {
+
+p.horizontal-line::after {
  content: '';
  position: absolute;
  width: 0.1em;
@@ -47,7 +57,8 @@
  margin-top: 1%;
  background: #3d3c3c;
 }
- .productgallery-label {
+
+.productgallery-label {
   visibility: hidden;
 }
 
@@ -58,11 +69,13 @@
   padding-left: 5%;
   padding-right: 5%;
 }
- .form {
+
+.form {
   padding-bottom: 2em;
   text-align: center;
 }
- .new-product {
+
+.new-product {
   float: left;
   margin-left: 1%;
   font-weight: bold;
