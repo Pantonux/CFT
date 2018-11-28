@@ -20,16 +20,21 @@
   text-decoration: none;
 }
 
-#Index h1 {
+#Index h1, #Products h1 {
+  font-family: Questrial, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
   text-align: center;
   text-transform: uppercase;
   background-color: #0066CC;
   color: #FFF;
-  padding: 2em;
+  padding: 2em 0.5em;
   width: 100%;
 }
 
-#Index h2 {
+#Index h2, #Products h2 {
+  font-size: 2em;
+  font-weight: 50;
   text-align: center;
   padding: 1em;
   width: 100%;
@@ -37,22 +42,51 @@
   color: #FFF;
  }
 
-#Index p {
+#Index p, #Products p {
+  font-size: 1.2em;
+  font-weight: 50;
   text-align: center;
   padding: 1.5em;
   width: 100%;
 }
 
 #About h1 {
+  font-family: Questrial, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
   text-align: center;
   text-transform: uppercase;
   background-color: #0066CC;
   color: #FFF;
-  padding: 2em;
+  padding: 2em 0.5em;
   width: 100%;
   }
 
 #About p {
+  font-size: 1.2em;
+  font-weight: 50;
+  text-align: center;
+  padding: 1.5em 0.5;
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+}
+
+#Contact h1 {
+  font-family: Questrial, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0066CC;
+  color: #FFF;
+  padding: 2em 0.5em;
+  width: 100%;
+  }
+
+#Contact p {
+  font-size: 1.2em;
+  font-weight: 50;
   text-align: center;
   padding: 1.5em;
   width: 100%;
@@ -60,62 +94,6 @@
   color: #FFF;
 }
 
-#Contact h1 {
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #0066CC;
-  color: #FFF;
-  padding: 2em;
-  width: 100%;
-  }
-
-#Contact p {
-  text-align: center;
-  padding: 1.5em;
-  width: 100%;
-  background-color: #000;
-  color: #FFF;
-}
-
-
-
-#Index h1 {
-  font-family: Questrial, Helvetica, Arial, sans-serif;
-  font-size: 3em;
-  font-weight: 100;
-}
-
-#Index p {
-  font-size: 1.2em;
-  font-weight: 50;
-}
-
-#Index h2 {
-  font-size: 2em;
-  font-weight: 50;
-}
-
-#About h1 {
-  font-family: Questrial, Helvetica, Arial, sans-serif;
-  font-size: 3em;
-  font-weight: 100;
-}
-
-#About p {
-  font-size: 1.2em;
-  font-weight: 50;
-}
-
-#Contact h1 {
-  font-family: Questrial, Helvetica, Arial, sans-serif;
-  font-size: 3em;
-  font-weight: 100;
-}
-
-#Contact p {
-  font-size: 1.2em;
-  font-weight: 50;
-}
 
 .img-responsive {
   text-align: center;
