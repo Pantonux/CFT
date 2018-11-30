@@ -6,10 +6,10 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-sm">
-        <%= image_tag(product.image_url, class: "img-fluid") %>
+        <%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %>
         <a href="#"><%= product.name %></a>
         <%= product.description %>
-        <%= product.colour %>
+        <%= product.color %>
         <%= product.price %>
       </div><!-- /col -->
     <% end %>

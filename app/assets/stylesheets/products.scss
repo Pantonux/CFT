@@ -1,82 +1,32 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.productgallery-name {
-  vertical-align: top;
-  width: 15%;
-  font-size: 0.85em;
-  font-size: 1.15em;
-  font-weight: 400;
+h1 {
+  font-family: Questrial, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+  text-align: center;
   text-transform: uppercase;
+  background-color: #0066CC;
+  color: #FFF;
+  padding: 2em 0.5em;
+  width: 100%;
 }
 
-.productgallery-description {
-  vertical-align: top;
-  width: 35%;
-  font-size: 0.85em;
-  font-size: 1em;
-  font-weight: 300;
-}
-
-.productgallery-image {
-  width: 35%;
-  padding-bottom: 5%;
-}
-
-.productgallery-color {
-  font-size: 1em;
-  font-weight: 300;
-}
-
-.productgallery-edit {
-  vertical-align: top;
-  width: 5%;
+h2 {
+  font-size: 2em;
+  font-weight: 50;
   text-align: center;
-}
+  padding: 1em;
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+ }
 
-.productgallery-price {
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.productgallery-edit p {
-  float:right;
-  padding-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 8%;
-  font-size: 0.9em;
-}
-
-p.horizontal-line::after {
- content: '';
- position: absolute;
- width: 0.1em;
- height: 1em;
- margin-left: 1%;
- margin-top: 1%;
- background: #3d3c3c;
-}
-
-.productgallery-label {
-  visibility: hidden;
-}
-
-.productgallery-info {
-  background-color: white;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.form {
-  padding-bottom: 2em;
+p {
+  font-size: 1.2em;
+  font-weight: 50;
   text-align: center;
-}
-
-.new-product {
-  float: left;
-  margin-left: 1%;
-  font-weight: bold;
+  padding: 1.5em;
+  width: 100%;
 }
