@@ -5,13 +5,12 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
+     <h2><%=link_to product.name, product %></h2>
       <div class="col-sm-2 col-md-4">
-        <h2><%=link_to product.name, product %></h2>
         <%= image_tag(product.image_url, class: "img-responsive") unless product.image_url.nil? %>
-        <a href="#"><%= product.name %></a>
-        <dl><%= product.description %></dl>
-        <dl><%= product.colour %></dl>
-        <dl><%= product.price %></dl>
+        <p>Description: <%= product.description %></p>
+        <p>Colour: <%= product.colour %></p>
+        <p>Price: <%= product.price %></p>
         <%= link_to 'Show', product %>
         <%= link_to 'Edit', edit_product_path(product) %>
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -21,4 +20,6 @@
 </div>
 
 
-<%= link_to 'New Product', new_product_path %>
+<div id="New_product">
+  <p><%= link_to 'New Product', new_product_path %></p>
+</div>

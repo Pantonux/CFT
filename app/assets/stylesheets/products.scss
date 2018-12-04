@@ -5,7 +5,7 @@ h1 {
   font-family: Questrial, Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: 100;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   background-color: #0066CC;
   color: #FFF;
@@ -16,7 +16,7 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 50;
-  text-align: center;
+  text-align: left;
   padding: 1em;
   width: 100%;
   background-color: #000;
@@ -25,6 +25,14 @@ h2 {
 
 p {
   font-size: 1.2em;
+  font-weight: 50;
+  text-align: left;
+  padding: 1.5em;
+  width: 100%;
+}
+
+#New_product p {
+  font-size: 1.5em;
   font-weight: 50;
   text-align: center;
   padding: 1.5em;
