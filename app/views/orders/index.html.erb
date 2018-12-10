@@ -1,0 +1,18 @@
+<div class="order-content">
+  <h1>Orders</h1>
+  <div class="row order-table">
+    <% @orders.each do |order| %>
+    <div class="col-sm">
+      <h2><strong>Order # <%= order.id %></strong></h2>
+      <h2><%= link_to order.product.name, order %></h2>
+      <%= image_tag(order.product.image_url, class: "img-fluid order-img") %>
+      <div class="order-description">
+        <p><%= order.product.description %></p>
+      </div>
+      <div class="order-price"
+        <strong>$ <%= order.product.price %></strong>
+      </div>
+    </div><!-- /col -->
+    <% end %>
+  </div>
+</div>

@@ -112,6 +112,57 @@
   display: flex;
 }
 
+/* ============ Order ============ */
+.order-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .order-img {
+  width: 120px;
+  float: left;
+}
+ .order-description {
+  background-color: white;
+  width: 500px;
+  min-height: 120px;
+}
+ .order-description p {
+  padding-left: 130px;
+  padding-top: 5px;
+  font-size: 1em;
+}
+ .order-price {
+  width: 500px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+ .order-info {
+  background-color: white;
+  padding: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .order-info p {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+ #total-price {
+  font-size: 1.5em;
+}
+ #total-price::before {
+  content: '';
+  position: absolute;
+  width: 8em;
+  height: 0.08em;
+  background: #3d3c3c;
+}
+
 
 
  // Place all the styles related to the simple_pages controller here.
