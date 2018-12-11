@@ -163,6 +163,32 @@
   background: #3d3c3c;
 }
 
+/* ============ Search ============ */
+
+.search_button {
+  background-color: #3d3c3c;
+  letter-spacing: 0.07em;
+  color: white;
+  padding: 1em;
+  border: 1px solid #3d3c3c;
+  text-align: center;
+  font-weight: 300;
+  border-bottom-right-radius: 5px;
+}
+ .search_button:hover  {
+  font-size: 1em;
+  background-color: #0066CC;
+  padding: 1em;
+  text-align: center;
+}
+ .search_field {
+  font-size: 1em;
+  margin-left: 5px;
+  background-color: white;
+  padding: 1em;
+  border-top-left-radius: 5px;
+}
+
 
 
  // Place all the styles related to the simple_pages controller here.
