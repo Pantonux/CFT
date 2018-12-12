@@ -1,4 +1,29 @@
+
+
 <div id="Contact">
 <h1>Contact us!</h1>
-<p>Book an appointment!<br>One of our employees will contact you and invite you to our showroom in Görlitzer Park</p>
+<p>Book an appointment,<br>One of our employees will contact you and invite you to our showroom in Görlitzer Park</p>
+</div>
+
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row">
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+  </div>
+</div>
+
+<div class="send">
+<%= form.submit "Send", class: "form_label" %>
+<% end %>
 </div>
