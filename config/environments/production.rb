@@ -94,3 +94,4 @@ Rails.application.configure do
 end
 
   config.action_mailer.default_url_options = { host: 'berlin-s-bikes.herokuapp.com' }
+end
