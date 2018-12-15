@@ -1,0 +1,21 @@
+<div class="index-content">
+  <h1>Log in</h1>
+ <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="form-group signin-form">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", id:"exampleInputEmail1", placeholder: "Email adress", class:"form-control signin-field" %>
+  </div>
+   <div class="form-group signin-form">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class:"form-control signin-field" %>
+  </div>
+   <% if devise_mapping.rememberable? %>
+    <div class="form-group signin-form">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me, class:"productedit-title" %>
+    </div>
+  <% end -%>
+   <div class="actions signin-form">
+    <%= f.submit "Log in", class:"btn btn-light product_create" %>
+  </div>
+<% end %>
+ <%= render "devise/shared/links" %>
+</div>

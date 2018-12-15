@@ -1,0 +1,31 @@
+<div class="index-content">
+  <h1>Sign up</h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="form signin-form">
+    <%= f.label :email, class:"productedit-title" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email adress", class:"form-control signin-field" %>
+  </div>
+
+  <div class="form signin-form">
+    <%= f.label :password, class:"productedit-title" %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class:"form-control signin-field" %>
+  </div>
+
+  <div class="form signin-form">
+    <%= f.label :password_confirmation, class:"productedit-title" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Re-enter password", class:"form-control signin-field"  %>
+  </div>
+
+  <div class="actions signin-form">
+    <%= f.submit "Sign up", class:"btn btn-light product_create"  %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>

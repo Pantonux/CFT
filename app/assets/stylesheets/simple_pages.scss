@@ -215,5 +215,18 @@
 }
 
  // Place all the styles related to the simple_pages controller here.
+
+p.alert {
+   color: red;
+ }
+
+p.notice {
+   color: #cba90d!important;
+   font-size: 2em;
+   font-weight: bolder;
+   padding-bottom: 2em;
+   text-align: center;
+ }
+
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
