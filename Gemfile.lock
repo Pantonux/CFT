@@ -189,7 +189,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
+<<<<<<< HEAD
   cancancan (~> 2.2)
+=======
+  cancancan (~> 1.10)
+>>>>>>> master
   coffee-rails (~> 4.2)
   devise
   jbuilder (~> 2.5)
