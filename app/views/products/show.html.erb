@@ -1,32 +1,37 @@
 <div class="index-content">
   <div class="container">
-  <div class="row">
-
+   <div class="row">
     <div class="col-sm-12 col-lg-6">
-      <%= image_tag(@product.image_url, class: "img-fluid") if @product.image_url%>
+     <%= image_tag(@product.image_url, class: "img-fluid") if @product.image_url%>
     </div>
 
-    <div class="col-sm-12 col-lg-6">
-      <p class="productname-show">
-        <%= @product.name %>
-      </p>
-      <p class="productgallery-decription">
-        <%= @product.description %>
-      </p>
-      <p class="productgalleryprice-tag">
-        <%= @product.price %>€
-      </p>
-      <strong>Overview</strong>
-      <p class="productgallery-decription">
-        Color: <%= @product.colour %>
-      </p>
-  <p>
-     <strong>Reviews:</strong>
-     <%= @product.highest_rating_comment %>
-   </p>
-   <%= link_to 'Edit', edit_product_path(@product) %> |
-   <%= link_to 'Back', products_path %>
+<p class="productname-show">
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p class="product-description">
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @product.image_url %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @product.colour %>
+</p>
+
+<strong>Price:</strong>
+ <%= @product.price %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+  </div>
  </div>
-</div>
-</div>
 </div>
