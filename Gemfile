@@ -65,5 +65,3 @@ gem 'devise'
 gem 'cancancan', '~> 2.2'
 
 gem 'font-awesome-sass'
-
-gem 'ratyrate'
