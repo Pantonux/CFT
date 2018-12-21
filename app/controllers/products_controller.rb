@@ -15,6 +15,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @comments = @product.comments.order("created_at DESC")
   end
 
   # GET /products/new
@@ -30,7 +31,11 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
-
+    @comment = @product.comments.new(comment_params)
+    @comment.user = current_user
+    @comment.save
+    redirect_to product_path(@product)
+  end
     respond_to do |format|
       if @product.save
         format.html { redirect_to '/products/' }

@@ -3,34 +3,48 @@
    <div class="row">
     <div class="col-sm-12 col-lg-6">
      <%= image_tag(@product.image_url, class: "img-fluid") if @product.image_url%>
+     <%= link_to 'Edit', edit_product_path(@product) %> |
+     <%= link_to 'Back', products_path %>
     </div>
 
-<p class="productname-show">
+<div class="col-sm-12 col-lg-6">
+ <p class="productname-show">
   <strong>Name:</strong>
   <%= @product.name %>
-</p>
+ </p>
 
-<p class="product-description">
+ <p class="product-description">
   <strong>Description:</strong>
   <%= @product.description %>
-</p>
-
-<p>
+ </p>
+ <p class="text-bold">Overview</p>
+ <p>
   <strong>Image url:</strong>
   <%= @product.image_url %>
-</p>
+ </p>
 
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
+ <p>
+   <strong>Colour:</strong>
+   <%= @product.colour %>
+ </p>
 
-<strong>Price:</strong>
- <%= @product.price %>
-</p>
+ <p class="productgalleryprice-tag">
+  <%= number_to_currency(@product.price, :unit => "€") %>
+ </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+  <p>Average Rating</p>
+  <div class="star-rating" data-score="<%= @product.average_rating %>">
+  </div>
+  <%= @product.highest_rating_comment %>
+  </div>
+
+  <div class="col-lg-12 product-comments">
+   <%= render 'new_comment' %>
+  </div>
+
+  <div class="col-lg-12 product-comments">
+   <%= render 'comments' %>
+  </div>
 
   </div>
  </div>
