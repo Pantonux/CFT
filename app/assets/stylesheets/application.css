@@ -13,7 +13,4 @@
  *= require_tree .
  *= require_self
  */
- #footer {
-   text-align: center;
-   width: 100% !important;
- }
+ *= require jquery.raty
