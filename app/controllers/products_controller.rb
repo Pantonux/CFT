@@ -32,11 +32,7 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
-    @comment = @product.comments.new(comment_params)
-    @comment.user = current_user
-    @comment.save
-    redirect_to product_path(@product)
-  end
+
     respond_to do |format|
       if @product.save
         format.html { redirect_to '/products/' }
@@ -82,3 +78,4 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
+  end
