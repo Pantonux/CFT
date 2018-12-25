@@ -1,52 +1,40 @@
 <div class="index-content">
   <div class="container">
-   <div class="row">
+  <div class="row">
+
     <div class="col-sm-12 col-lg-6">
-     <%= image_tag(@product.image_url, class: "img-fluid") if @product.image_url%>
-     <%= link_to 'Edit', edit_product_path(@product) %> |
-     <%= link_to 'Back', products_path %>
+      <%= image_tag(@product.image_url, class: "img-fluid") if @product.image_url%>
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
     </div>
 
-<div class="col-sm-12 col-lg-6">
- <p class="productname-show">
-  <strong>Name:</strong>
-  <%= @product.name %>
- </p>
+    <div class="col-sm-12 col-lg-6">
+      <p class="productname-show">
+        <%= @product.name %>
+      </p>
+      <p class="productgallery-destroycription">
+        <%= @product.description %>
+      </p>
+      <p class="text-bold">Overview</p>
+      <p class="productgallery-description">
+        Color: <%= @product.colour %>
+      </p>
+      <p class="productgalleryprice-tag">
+        <%= number_to_currency(@product.price, :unit => "€") %>
+      </p>
 
- <p class="product-description">
-  <strong>Description:</strong>
-  <%= @product.description %>
- </p>
- <p class="text-bold">Overview</p>
- <p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
- </p>
+        <div class="rated star-rating" data-score="<%= @product.average_rating %>>
+        </div>
+        <%= @product.highest_rating_comment.body %>
+      </div>
+        <%= render 'new_comment' %>
+      </div>
 
- <p>
-   <strong>Colour:</strong>
-   <%= @product.colour %>
- </p>
+      <div class="col-lg-12 product-comments">
+        <%= render 'comments' %>
+        <%= will_paginate @comments %>
+    </div>
 
- <p class="productgalleryprice-tag">
-  <%= number_to_currency(@product.price, :unit => "€") %>
- </p>
-
-  <p>Average Rating</p>
-  <div class="rated star-rating" data-score="<%= @product.average_rating %>">
-  </div>
-  <%= @product.highest_rating_comment.body %>
-  </div>
-
-  <div class="col-lg-12 product-comments">
-   <%= render 'new_comment' %>
-  </div>
-
-  <div class="col-lg-12 product-comments">
-   <%= render 'comments' %>
-   <%= will_paginate @comments %>
-  </div>
-
-  </div>
- </div>
+</div>
+</div>
 </div>
