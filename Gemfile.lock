@@ -68,6 +68,11 @@ GEM
     diff-lcs (1.3)
     erubi (1.8.0)
     execjs (2.7.0)
+    factory_bot (4.11.1)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
+      railties (>= 3.0.0)
     ffi (1.9.25)
     font-awesome-sass (5.6.1)
       sassc (>= 1.11)
@@ -220,6 +225,7 @@ DEPENDENCIES
   cancancan (~> 2.2)
   coffee-rails (~> 4.2)
   devise
+  factory_bot_rails (~> 4.0)
   font-awesome-sass
   jbuilder (~> 2.5)
   jquery-rails

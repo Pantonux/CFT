@@ -3,11 +3,16 @@ require 'rails_helper'
 describe OrdersController, type: :controller do
 
     let(:product) { Product.create!(name:"Cownie", description:"Cool children bike", image_url:"Cownie.jpg" )}
-    let(:user) { User.create!(email: "info@berlin-s-bikes.com", password: "Passwordbsb")}
+    #let(:user) { User.create!(email: "info@berlin-s-bikes.com", password: "Passwordbsb")}
+
+    before do
+            @product = FactoryBot.create(:product)
+            @user = FactoryBot.create(:user)
+        end
 
     context 'when a user is logged in' do
       before do
-        sign_in user
+        sign_in @user
       end
 
     it "is a valid order" do
