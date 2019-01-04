@@ -1,5 +1,6 @@
  <h2><%=link_to product.name, product %></h2>
   <div class="col-sm-2 col-md-4">
+    <% logger.debug "Product: #{@product}"%>
     <%= image_tag(product.image_url, class: "img-responsive") unless product.image_url.blank? %>
     <p>Description: <%= product.description %></p>
     <p>Colour: <%= product.colour %></p>
