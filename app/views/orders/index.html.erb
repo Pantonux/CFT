@@ -10,7 +10,7 @@
         <p><%= order.product.description %></p>
       </div>
       <div class="order-price"
-        <strong>$ <%= order.product.price %></strong>
+        <strong><%= number_to_currency(order.product.price.to_f, unti:"€") %></strong>
       </div>
     </div><!-- /col -->
     <% end %>
