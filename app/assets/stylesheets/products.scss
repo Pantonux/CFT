@@ -32,8 +32,11 @@ p {
   font-size: 1.2em;
   font-weight: 50;
   text-align: left;
-  padding: 1.5em;
   width: 100%;
+}
+
+#average-rating {
+  padding-bottom: 34px;
 }
 
 #New_product p {
@@ -86,7 +89,7 @@ p {
 }
 
 .star-rating {
-  margin-top: -1em;
+  margin-top: 1em;
   margin-bottom: 3em;
 }
 

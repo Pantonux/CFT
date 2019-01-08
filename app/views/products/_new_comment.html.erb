@@ -1,6 +1,6 @@
 <% if signed_in? %>
-    <p class="text-bold">Please write this product a review</p>
-  <%= form_for([@product, @product.comments.build]) do |f| %>
+    <p class="text-bold">Please write a review</p>
+  <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
     <div class="form-group">
       <%= f.text_area :body, placeholder: "HOW DID YOU LIKE THIS BIKE?", class:"form-control message-box"  %>
     </div >
