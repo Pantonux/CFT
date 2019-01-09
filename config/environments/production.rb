@@ -61,6 +61,15 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+  config.cache_store = :dalli_store,
+                    (ENV["mc5.dev.ec2.memcachier.com:11211"] || "").split(","),
+                    {:username => ENV["CA15A6"],
+                     :password => ENV["709D5C9783CE9473FB318E341E5AEB4C"],
+                     :failover => true,
+                     :socket_timeout => 1.5,
+                     :socket_failure_delay => 0.2,
+                     :down_retry_delay => 60
+                    }
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque

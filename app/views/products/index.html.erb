@@ -4,7 +4,9 @@
 
 <div class="container-fluid">
   <div class="row">
-    <%= render @products %>
+    <% cache(cache_key_for_products) do %>
+     <%= render @products %>
+  <% end %>
   </div>
   <div class="btn btn-light product_create">
     <%= link_to 'New Product', new_product_path, :class => "new-product" %>
