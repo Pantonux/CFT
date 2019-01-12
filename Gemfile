@@ -74,3 +74,7 @@ gem 'will_paginate', '~> 3.1.6'
 gem 'stripe'
 
 gem 'dalli'
+
+gem 'redis-rails'
+
+gem 'redis'
