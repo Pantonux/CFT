@@ -31,9 +31,12 @@
           <%= render partial: "shared/stripe_checkout_button" %>
           <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
-      </div>
+
+      <div id="comment-margins">
         <%= render 'new_comment' %>
       </div>
+
+      <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 
       <div class="col-lg-12 product-comments">
         <%= render 'comments' %>

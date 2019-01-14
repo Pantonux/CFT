@@ -18,4 +18,5 @@
     root 'simple_pages#landing_page'
 
       resources :orders, only: [:index, :show, :create, :destroy]
+      mount ActionCable.server => '/cable'
   end
