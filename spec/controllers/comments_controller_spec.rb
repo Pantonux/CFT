@@ -5,7 +5,7 @@ describe CommentsController, type: :controller do
   before do
   @user = FactoryBot.create(:user)
   end
-  let(:product){ Product.create!(name: "Cusion")}
+  let(:product){ Product.create!(name: "Cownie")}
 
     context 'when a user is logged in' do
      before do
