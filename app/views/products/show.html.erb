@@ -1,6 +1,6 @@
 <div class="index-content">
   <div class="container">
-  <div class="row">
+    <div class="row" data-product-id="<%= @product.id %>">
 
     <div class="col-sm-12 col-lg-6">
       <%= image_tag(@product.image_url, width: "550", class: "img-fluid", class: "img-zoom", data_zoom_image:@product.image_url) if @product.image_url%>

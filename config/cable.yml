@@ -7,4 +7,4 @@ test:
 production:
   adapter: postgresql
   url: postgres://yuqfnphmdiytnx:e7ad2092ad7fde2d4ab8260e5ca24ec50acdc926100cc9b26d48d50ed617e303@ec2-54-235-193-0.compute-1.amazonaws.com:5432/d95ctepr9pp801
-  channel_prefix: nameofapp_production
+  channel_prefix: berlin-s-bikes_production
