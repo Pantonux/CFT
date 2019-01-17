@@ -30,7 +30,8 @@ describe Product do
     expect(Product.new(description: "I am a description")).not_to be_valid
   end
 
-  it "is not valid without a comment" do
-    expect(Product.new(description: "I am a description")).not_to be_valid
+  it "is not valid without a name" do
+    product = Factorybot.build(:product, name '')
+    expect(product).not_to be_valid
   end
 end
